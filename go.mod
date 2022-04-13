@@ -9,6 +9,7 @@ require (
 	github.com/blang/semver/v4 v4.0.0
 	github.com/briandowns/spinner v1.12.0
 	github.com/fatih/color v1.9.0 // indirect
+	github.com/go-openapi/swag v0.19.12 // indirect
 	github.com/labstack/echo/v4 v4.1.17
 	github.com/logrusorgru/aurora v2.0.3+incompatible
 	github.com/logrusorgru/aurora/v3 v3.0.0
@@ -19,4 +20,5 @@ require (
 	github.com/swaggo/echo-swagger v1.1.0
 	github.com/swaggo/swag v1.7.0
 	github.com/tylerb/graceful v1.2.15
+	golang.org/x/net v0.0.0-20201202161906-c7110b5ffcbb // indirect
 )

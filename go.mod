@@ -3,9 +3,8 @@ module github.com/hahwul/dalfox
 go 1.14
 
 require (
-	github.com/PuerkitoBio/goquery v1.6.1
+	github.com/PuerkitoBio/goquery v1.8.1
 	github.com/alecthomas/template v0.0.0-20190718012654-fb15b899a751
-	github.com/andybalholm/cascadia v1.2.0 // indirect
 	github.com/blang/semver/v4 v4.0.0
 	github.com/briandowns/spinner v1.12.0
 	github.com/fatih/color v1.9.0 // indirect
@@ -20,5 +19,4 @@ require (
 	github.com/swaggo/echo-swagger v1.1.0
 	github.com/swaggo/swag v1.7.0
 	github.com/tylerb/graceful v1.2.15
-	golang.org/x/net v0.0.0-20201202161906-c7110b5ffcbb // indirect
 )

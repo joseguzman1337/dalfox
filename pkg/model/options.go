@@ -30,6 +30,7 @@ type Options struct {
 	// Feature Options
 	BlindURL                  string `json:"blind,omitempty"`
 	CustomPayloadFile         string `json:"custom-payload-file,omitempty"`
+	CustomBlindXSSPayloadFile string `json:"custom-blind-xss-payload-file,omitempty"`
 	CustomAlertValue          string `json:"custom-alert-value,omitempty"`
 	CustomAlertType           string `json:"custom-alert-type,omitempty"`
 	OnlyDiscovery             bool   `json:"only-discovery,omitempty"`
@@ -50,6 +51,10 @@ type Options struct {
 	NoGrep                    bool `json:"skip-grepping,omitempty"`
 	SkipDiscovery             bool `json:"skip-discovery,omitempty"`
 	ForceHeadlessVerification bool `json:"force-headless-verification,omitempty"`
+	DetailedAnalysis          bool `json:"detailed-analysis,omitempty"` // Enable detailed parameter analysis (Issue #695)
+	FastScan                  bool `json:"fast-scan,omitempty"`         // Enable fast scanning mode for URL lists (Issue #764)
+	MagicCharTest             bool `json:"magic-char-test,omitempty"`   // Enable magic character testing
+	ContextAware              bool `json:"context-aware,omitempty"`     // Enable context-aware payload selection
 
 	// Performance Options
 	Timeout     int `json:"timeout,omitempty"`
@@ -58,8 +63,12 @@ type Options struct {
 	Delay       int `json:"delay,omitempty"`
 
 	// Server Mode Options
-	ServerHost string `json:"server-host,omitempty"`
-	ServerPort int    `json:"server-port,omitempty"`
+	ServerHost     string   `json:"server-host,omitempty"`
+	ServerPort     int      `json:"server-port,omitempty"`
+	APIKey         string   `json:"api-key,omitempty"`
+	ServerType     string   `json:"server-type,omitempty"`
+	AllowedOrigins []string `json:"allowed-origins,omitempty"`
+	JSONP          bool     `json:"jsonp,omitempty"`
 
 	// Output Options
 	Silence          bool   `json:"silence,omitempty"`
